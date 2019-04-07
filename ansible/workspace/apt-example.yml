@@ -1,0 +1,44 @@
+# https://docs.ansible.com/ansible/latest/modules/apt_module.html
+- name: apt example
+  hosts: localhost
+  connection: local
+  user: root
+  tasks:
+    - name: update apt
+      apt:
+        update_cache: yes
+        cache_valid_time: 604800 # = 7d * 24h * 60s (one week)
+    - name: install curl
+      apt:
+        name: curl
+        state: present
+#        update_cache: yes
+#        upgrade: yes
+    - name: install git
+      apt:
+        name: git
+        state: present
+    - name: install htop
+      apt:
+        name: htop
+        state: present
+    - name: install make
+      apt:
+        name: make
+        state: present
+    - name: install tree
+      apt:
+        name: tree
+        state: present
+    - name: install vim
+      apt:
+        name: vim
+        state: present
+    - name: install wget
+      apt:
+        name: wget
+        state: present
+    - name: clean apt dependencies
+      apt:
+        autoclean: yes
+        autoremove: yes

@@ -1,0 +1,17 @@
+#############################
+### Docker
+#############################
+
+/.env
+/docker-compose.override.yml
+
+#############################
+### Workspace
+#############################
+
+/workspace/node_modules
+/workspace/package-lock.json
+
+# Random stuff
+/workspace/**/*.cache
+/workspace/**/*.log

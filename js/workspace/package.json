@@ -1,0 +1,8 @@
+{
+  "devDependencies": {
+    "jest": "*"
+  },
+  "scripts": {
+    "jest": "jest --config=jest.js"
+  }
+}

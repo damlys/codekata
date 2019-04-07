@@ -1,0 +1,35 @@
+{
+    "autoload": {
+        "psr-4": {
+            "": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "spec\\": "spec/",
+            "Tests\\": "tests/"
+        }
+    },
+    "require-dev": {
+        "behat/behat": "*",
+        "mockery/mockery": "*",
+        "phpspec/phpspec": "*",
+        "phpunit/phpunit": "*"
+    },
+    "scripts": {
+        "test": [
+            "@behat",
+            "@phpspec",
+            "@phpunit"
+        ],
+        "behat": [
+            "vendor/bin/behat --format progress"
+        ],
+        "phpspec": [
+            "vendor/bin/phpspec run --no-code-generation"
+        ],
+        "phpunit": [
+            "vendor/bin/phpunit"
+        ]
+    }
+}

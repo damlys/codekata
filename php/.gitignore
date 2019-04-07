@@ -1,0 +1,20 @@
+#############################
+### Docker
+#############################
+
+/.env
+/docker-compose.override.yml
+
+#############################
+### Workspace
+#############################
+
+/workspace/vendor
+/workspace/composer.lock
+
+/workspace/xdebug/*
+!/workspace/xdebug/.gitkeep
+
+# Random stuff
+/workspace/**/*.cache
+/workspace/**/*.log
