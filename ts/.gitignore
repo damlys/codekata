@@ -1,0 +1,23 @@
+#############################
+### Docker
+#############################
+
+/.env
+/docker-compose.override.yml
+
+#############################
+### Workspace
+#############################
+
+/workspace/node_modules
+/workspace/package-lock.json
+
+# Build files
+/workspace/build
+/workspace/build.d.ts
+/workspace/build.js
+/workspace/build.js.map
+
+# Random stuff
+/workspace/**/*.cache
+/workspace/**/*.log

@@ -16,5 +16,8 @@ indent_size = 4
 [composer.{json,lock}]
 indent_size = 4
 
+[*.ts]
+indent_size = 4
+
 [Makefile]
 indent_style = tab

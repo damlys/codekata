@@ -17,6 +17,7 @@ RUN npm completion > /etc/bash_completion.d/npm \
 && npm config set --global update-notifier=false
 
 RUN npm install --global \
-  node-dev \
-  nodemon \
+  ts-node \
+  ts-node-dev \
+  typescript \
 && npm cache clean --force

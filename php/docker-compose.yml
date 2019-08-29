@@ -16,6 +16,8 @@ services:
       - type: volume
         source: composer_cache
         target: /root/.composer/cache
+    ports:
+      - 9000:9000
 
 volumes:
   composer_cache:

@@ -1,10 +1,10 @@
 version: "2.4"
 services:
-  js:
+  ts:
     build:
       context: .
       dockerfile: Dockerfile
-    image: 127.0.0.1:5000/codekata/js:unreleased
+    image: 127.0.0.1:5000/codekata/ts:unreleased
 #    env_file:
 #      - .env
     environment:

@@ -3,6 +3,7 @@
     "jest": "*"
   },
   "scripts": {
-    "jest": "jest --config=jest.js"
+    "jest": "jest",
+    "jest-watch": "jest --watchAll"
   }
 }
