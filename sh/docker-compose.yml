@@ -5,11 +5,7 @@ services:
       context: .
       dockerfile: Dockerfile
     image: 127.0.0.1:5000/codekata/sh:unreleased
-#    env_file:
-#      - .env
-#    environment:
-#      FOO: BAR
     volumes:
-      - type: bind
-        source: ./workspace
-        target: /workspace
+    - type: bind
+      source: ./workspace
+      target: /workspace

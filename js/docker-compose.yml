@@ -5,20 +5,17 @@ services:
       context: .
       dockerfile: Dockerfile
     image: 127.0.0.1:5000/codekata/js:unreleased
-#    env_file:
-#      - .env
     environment:
       NODE_ENV: development
-    volumes:
-      - type: bind
-        source: ./workspace
-        target: /workspace
-      - type: volume
-        source: npm_cache
-        target: /root/.npm
     ports:
-      - 9229:9229
-
+    - 9229:9229
+    volumes:
+    - type: bind
+      source: ./workspace
+      target: /workspace
+    - type: volume
+      source: npm_cache
+      target: /root/.npm
 volumes:
   npm_cache:
     driver: local

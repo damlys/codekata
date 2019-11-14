@@ -5,20 +5,15 @@ services:
       context: .
       dockerfile: Dockerfile
     image: 127.0.0.1:5000/codekata/php:unreleased
-#    env_file:
-#      - .env
-#    environment:
-#      FOO: BAR
-    volumes:
-      - type: bind
-        source: ./workspace
-        target: /workspace
-      - type: volume
-        source: composer_cache
-        target: /root/.composer/cache
     ports:
-      - 9000:9000
-
+    - 9000:9000
+    volumes:
+    - type: bind
+      source: ./workspace
+      target: /workspace
+    - type: volume
+      source: composer_cache
+      target: /root/.composer/cache
 volumes:
   composer_cache:
     driver: local
