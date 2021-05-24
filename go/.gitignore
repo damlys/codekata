@@ -1,0 +1,13 @@
+#############################
+### Docker
+#############################
+
+/.env
+/docker-compose.override.yml
+
+#############################
+### Workspace
+#############################
+
+# build file
+/workspace/codekata

@@ -1,4 +1,4 @@
-FROM php:latest
+FROM php:7
 USER root
 WORKDIR /workspace
 ENTRYPOINT []
